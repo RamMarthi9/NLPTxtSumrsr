@@ -12,19 +12,18 @@ AUTHOR_USER_NAME = "ram.marthi@gmail.com"
 SRC_REPO="textSummarizer"
 AUTHOR_EMAIL = "ram.marthi@gmail.com"
 
-setuptools.setup(
+setuptools.setup (
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description="A small python package for NLP app"
+    description="A small python package for NLP app",
     long_description=long_description,
-    long_description_content="text/markdown"
+    long_description_content="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     projects_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src")
-
 )
